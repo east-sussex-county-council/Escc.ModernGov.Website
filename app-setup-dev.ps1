@@ -46,8 +46,8 @@ DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Feeds"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Data.ActiveDirectory"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Cms"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Elibrary"
-NuGetRestoreForProject "$parentFolderOfThisScript\Escc.Egms"
-NuGetRestoreForProject "$parentFolderOfThisScript\Escc.Cms"
+NuGetRestoreForProject $parentFolderOfThisScript "Escc.Egms"
+NuGetRestoreForProject $parentFolderOfThisScript "Escc.Cms"
 
 CheckSiteExistsBeforeAddingApplication("Escc.EastSussexGovUK")
 EnableDotNet40InIIS
