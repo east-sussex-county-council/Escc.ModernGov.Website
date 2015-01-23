@@ -11,7 +11,7 @@
 <asp:Content runat="server" ContentPlaceHolderID="breadcrumb">
     {breadcrumb}
 </asp:Content>
-<asp:Content runat="server" ContentPlaceHolderID="content">
+<asp:Content runat="server" ContentPlaceHolderID="afterForm">
     <div class="supporting moderngov-nav text-content content-small content-medium">{sidenav}</div>
     <div class="article moderngov-article">
         <article>
