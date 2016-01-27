@@ -1,0 +1,45 @@
+﻿
+
+/*@media only screen and (m-width: 474px) {*/
+    .moderngov-nav {
+        width: 93%;
+        padding: .1px 3.797468% 0;
+        background: #fff;
+    }
+/*}*/
+
+
+.nav-menu ul, .nav-menu {
+    list-style-type: none;
+    margin: 0;
+}
+
+ul.nav-menu {
+    margin-top: 0;
+}
+
+
+.nav-menu ul {
+    background-color: #ebebeb;
+    margin: 0;
+}
+
+.nav-menu ul:first-child {
+    margin-bottom: 30px;
+}
+
+.nav-menu ul li {
+    padding: 6px 6px 6px 6px;
+    border: 1px solid #1472a4;
+}
+
+.nav-menu ul li a {
+    color: #1a608f;
+    text-decoration: none;
+}
+
+.nav-menu ul .nav-header {
+    background-color: #1472a4;
+    color: white;
+    text-align: center;
+}

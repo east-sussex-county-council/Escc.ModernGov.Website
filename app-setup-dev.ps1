@@ -39,21 +39,18 @@ $projectName = "Escc.ModernGov.Website"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.EastSussexGovUK"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.NavigationControls"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Data.Web"
-DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Data.Xml"
-DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Egms"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.HouseStyle"
-DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Feeds"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Data.ActiveDirectory"
-DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Cms"
-DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Elibrary"
-NuGetRestoreForProject $parentFolderOfThisScript "Escc.Egms"
-NuGetRestoreForProject $parentFolderOfThisScript "Escc.Cms"
 
-CheckSiteExistsBeforeAddingApplication("Escc.EastSussexGovUK")
 EnableDotNet40InIIS
-CreateApplicationPool $projectName true
-CreateVirtualDirectory "Escc.EastSussexGovUK" "moderngov" $pathOfThisScript true $projectName
-CreateVirtualDirectory "Escc.EastSussexGovUK" "moderngov/masterpages" "$parentFolderOfThisScript\Escc.EastSussexGovUK\masterpages" true
+CreateApplicationPool $projectName
+CreateWebsite $projectName "$pathOfThisScript\$projectName"
+CreateHTTPSBinding $projectName "localhost"
+RemoveHTTPBinding $projectName 80
+CreateVirtualDirectory $projectName "Escc.EastSussexGovUK" "$parentFolderOfThisScript\Escc.EastSussexGovUK\Escc.EastSussexGovUK\" true
+CreateVirtualDirectory $projectName "masterpages" "$parentFolderOfThisScript\Escc.EastSussexGovUK\Escc.EastSussexGovUK\masterpages" true
+CopyConfig "$pathOfThisScript\$projectName\Web.example.config" "$pathOfThisScript\$projectName\Web.config"
+
 
 Write-Host
 Write-Host "Done." -ForegroundColor "Green"

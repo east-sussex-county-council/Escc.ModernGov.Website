@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/MsBuild/2003">
+
+  <UsingTask TaskName="CssCompressorTask" AssemblyFile="$(MSBuildProjectDirectory)\bin\Yahoo.Yui.Compressor.Build.MsBuild.dll" />
+
+  <Target Name="Minimize" Condition="'$(ConfigurationName)' == 'Release'">
+    <CssCompressorTask SourceFiles="css/nav-menu-small.css" OutputFile="css/min/nav-menu-small.css" />
+    <CssCompressorTask SourceFiles="css/nav-menu-medium.css" OutputFile="css/min/nav-menu-medium.css" />
+    <CssCompressorTask SourceFiles="css/nav-menu-large.css" OutputFile="css/min/nav-menu-large.css" />
+  </Target>
+</Project>
