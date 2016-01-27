@@ -35,7 +35,7 @@
                     <li><a href="https://democracy.eastsussex.gov.uk/mgMemberIndex.aspx?bcr=1">Councillors</a></li>
                     <li><a href="https://democracy.eastsussex.gov.uk/mgDelegatedDecisions.aspx?bcr=1&DM=0&DS=2&K=0&DR=&V=0">Decisions</a></li>
                     <li><a href="https://democracy.eastsussex.gov.uk/mgPlansHome.aspx?bcr=1">Forward Plans</a></li>
-                    <li><a href="mgRegisterKeywordInterest.aspx?bcr=1">Subscribe to updates</a></li>
+                    <li><a href="https://democracy.eastsussex.gov.uk/mgRegisterKeywordInterest.aspx?bcr=1">Subscribe to updates</a></li>
                 </ul>
             </li>
             <li>
