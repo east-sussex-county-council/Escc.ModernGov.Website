@@ -5,10 +5,9 @@
     <Metadata:MetadataControl runat="server" Title="{pagetitle}" DateCreated="2015-01-15" 
         IpsvPreferredTerms="Government, politics and public administration;Local government;County councillors;Political parties" 
         Creator="Member Services Manager, East Sussex County Council"/>
-    <ClientDependency:Css runat="server" Files="ContentSmall;NavMenuSmall;MobileControls" />
-        <ClientDependency:Css runat="server" Files="ContentMedium" MediaConfiguration="Medium" />
-        <ClientDependency:Css runat="server" Files="NavMenuMedium" MediaConfiguration="Medium" />
-        <ClientDependency:Css runat="server" Files="ContentLarge;NavMenuLarge" MediaConfiguration="Large" />
+    <ClientDependency:Css runat="server" Files="ContentSmall;ModernGovMenuSmall;MobileControls;NavigationSmall" />
+        <ClientDependency:Css runat="server" Files="ContentMedium;ModernGovMenuMedium;NavigationMedium" MediaConfiguration="Medium" />
+        <ClientDependency:Css runat="server" Files="ContentLarge;ModernGovMenuLarge;NavigationLarge" MediaConfiguration="Large" />
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="breadcrumb">
@@ -27,7 +26,7 @@
 
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="afterForm">
-    <div class="supporting moderngov-nav text-content content-small content-medium">
+    <div class="supporting moderngov-nav text-content content-small content-medium menu-nav-medium">
         <ul class="nav-menu">
             <li>
                 <ul>
@@ -64,3 +63,6 @@
     </div>
 </asp:Content>
 
+<asp:Content runat="server" ContentPlaceHolderID="javascript">
+    <ClientDependency:Script runat="server" Files="Navigation"/>
+</asp:Content>
