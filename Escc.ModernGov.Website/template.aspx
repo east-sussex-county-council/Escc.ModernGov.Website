@@ -14,9 +14,9 @@
     <nav>
         <h2 class="aural">You are here</h2>
         <ol class="breadcrumb screen large">
-            <li class="up level1"><span class="aural">Level 1: </span><a href="https://new.eastsussex.gov.uk/">Home</a></li>
-            <li class="up level2"><span class="aural">Level 2: </span><a href="https://new.eastsussex.gov.uk/yourcouncil/">Your Council</a></li>
-            <li class="up level3"><span class="aural">Level 3: </span><a href="https://new.eastsussex.gov.uk/yourcouncil/about/">About the County Council</a></li>
+            <li class="up level1"><span class="aural">Level 1: </span><a href="https://www.eastsussex.gov.uk/">Home</a></li>
+            <li class="up level2"><span class="aural">Level 2: </span><a href="https://www.eastsussex.gov.uk/yourcouncil/">Your Council</a></li>
+            <li class="up level3"><span class="aural">Level 3: </span><a href="https://www.eastsussex.gov.uk/yourcouncil/about/">About the County Council</a></li>
             {breadcrumb}
         </ol>
     </nav>
@@ -41,15 +41,15 @@
             <li>
                 <ul>
                     <li class="nav-header">Also in this section</li>
-                    <li><a href="https://new.eastsussex.gov.uk/yourcouncil/about/keydocuments/constitution/">Constitution</a></li>
-                    <li><a href="https://new.eastsussex.gov.uk/yourcouncil/about/districtandborough/">District and borough councils</a></li>
-                    <li><a href="https://new.eastsussex.gov.uk/yourcouncil/localelections/elections/">Elections</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/yourcouncil/about/keydocuments/constitution/">Constitution</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/yourcouncil/about/districtandborough/">District and borough councils</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/yourcouncil/localelections/elections/">Elections</a></li>
                     <li><a href="https://democracy.eastsussex.gov.uk/ieDocHome.aspx?bcr=1 ">Meetings</a></li>
-                    <li><a href="https://new.eastsussex.gov.uk/yourcouncil/about/government/">MPs and MEPs</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/yourcouncil/about/government/">MPs and MEPs</a></li>
                     <li><a href="https://democracy.eastsussex.gov.uk/mgListOutsideBodiesByCategory.aspx?bcr=1">Outside bodies</a></li>
-                    <li><a href="https://new.eastsussex.gov.uk/yourcouncil/about/howthecouncilworks/parishtowncouncils/">Parish and town councils</a></li>
-                    <li><a href="https://new.eastsussex.gov.uk/yourcouncil/consultation/petitions/">Petitions</a></li>
-                    <li><a href="https://new.eastsussex.gov.uk/yourcouncil/webcasts/">Webcasts</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/yourcouncil/about/howthecouncilworks/parishtowncouncils/">Parish and town councils</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/yourcouncil/consultation/petitions/">Petitions</a></li>
+                    <li><a href="https://www.eastsussex.gov.uk/yourcouncil/webcasts/">Webcasts</a></li>
                 </ul>
             </li>
         </ul>
