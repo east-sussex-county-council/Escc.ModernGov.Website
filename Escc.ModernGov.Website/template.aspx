@@ -47,7 +47,7 @@
                     <li><a href="https://www.eastsussex.gov.uk/yourcouncil/about/government/">MPs and MEPs</a></li>
                     <li><a href="https://democracy.eastsussex.gov.uk/mgListOutsideBodiesByCategory.aspx?bcr=1">Outside bodies</a></li>
                     <li><a href="https://www.eastsussex.gov.uk/yourcouncil/about/howthecouncilworks/parishtowncouncils/">Parish and town councils</a></li>
-                    <li><a href="https://www.eastsussex.gov.uk/yourcouncil/consultation/petitions/">Petitions</a></li>
+                    <li><a href="https://democracy.eastsussex.gov.uk/mgEPetitionListDisplay.aspx?bcr=1">Petitions</a></li>
                     <li><a href="https://www.eastsussex.gov.uk/yourcouncil/webcasts/">Webcasts</a></li>
                 </ul>
             </li>
