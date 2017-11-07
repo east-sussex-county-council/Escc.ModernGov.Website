@@ -43,3 +43,10 @@ ul.nav-menu {
     color: white;
     text-align: center;
 }
+
+/* In the grid of councillors with their photos, mod.gov have set the font-size to 14px but not set the line-height,
+   so it inherits our larger line-height and causes the text for lead members, with long job titles, to overlap the 
+   councillor profile below. It also lacks paragraph spacing which lets you tell one job title from the next.
+   https://democracy.eastsussex.gov.uk/mgMemberIndex.aspx?bcr=1
+*/
+div#modgov .mgThumbsList ul li p { margin: 0px 5px 9px; line-height: 16px; }
