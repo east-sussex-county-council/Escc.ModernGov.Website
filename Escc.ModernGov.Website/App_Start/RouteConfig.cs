@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Escc.Politics.Elections.Website.App_Start
+namespace Escc.ModernGov.Website.App_Start
 {
     public class RouteConfig
     {
