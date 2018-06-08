@@ -207,9 +207,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="css\nav-menu-large.css" />
-    <None Include="css\nav-menu-medium.css" />
-    <None Include="css\nav-menu-small.css" />
+    <Content Include="css\nav-menu-large.css" />
+    <Content Include="css\nav-menu-medium.css" />
+    <Content Include="css\nav-menu-small.css" />
     <Content Include="Global.asax" />
   </ItemGroup>
   <ItemGroup>
