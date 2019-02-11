@@ -3,20 +3,44 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using Escc.EastSussexGovUK.Mvc;
+using Exceptionless;
 
 namespace Escc.ModernGov.Website
 {
     public class TemplateController : Controller
     {
         // GET: Template
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
+            var model = new ModernGovModel();
+            var templateRequest = new EastSussexGovUKTemplateRequest(Request);
+            try
+            {
+                model.WebChat = await templateRequest.RequestWebChatSettingsAsync();
+            }
+            catch (Exception ex)
+            {
+                // Catch and report exceptions - don't throw them and cause the page to fail
+                ex.ToExceptionless().Submit();
+            }
+            try
+            {
+                model.TemplateHtml = await templateRequest.RequestTemplateHtmlAsync();
+            }
+            catch (Exception ex)
+            {
+                // Catch and report exceptions - don't throw them and cause the page to fail
+                ex.ToExceptionless().Submit();
+            }
+
             // Get the HTML that would normally be rendered for the view.
             string html = RenderViewToString(ControllerContext,
             "~/views/Template/Index.cshtml",
-            new ModernGovModel());
+            model);
 
             // Remove properties which specify the URL, which will be the URL of the template rather than the consuming page.
             // These properties are rendered by a control in the layout view, which is why they can't simply be removed in the Index view.
