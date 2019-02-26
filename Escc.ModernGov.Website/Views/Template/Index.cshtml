@@ -6,13 +6,13 @@
     Model.Metadata.DateCreated = "2015-01-15";
     Model.Metadata.IpsvPreferredTerms = "Government, politics and public administration;Local government;County councillors;Political parties";
     Model.Metadata.Creator = "Member Services Manager, East Sussex County Council";
-    Html.RequiresCss(CssFileAlias.Resolve("ModernGovMenuSmall"));
     Html.RequiresCss(CssFileAlias.Resolve("MobileControls"));
     Html.RequiresCss(CssFileAlias.Resolve("NavigationSmall"));
-    Html.RequiresCss(CssFileAlias.Resolve("ModernGovMenuMedium"), MediaQueryAlias.Resolve("Medium"));
     Html.RequiresCss(CssFileAlias.Resolve("NavigationMedium"), MediaQueryAlias.Resolve("Medium"));
-    Html.RequiresCss(CssFileAlias.Resolve("ModernGovMenuLarge"), MediaQueryAlias.Resolve("Large"));
     Html.RequiresCss(CssFileAlias.Resolve("NavigationLarge"), MediaQueryAlias.Resolve("Large"));
+    Html.RequiresCss("~/css/nav-menu-small.css");
+    Html.RequiresCss("~/css/nav-menu-medium.css", MediaQueryAlias.Resolve("Medium"));
+    Html.RequiresCss("~/css/nav-menu-large.css", MediaQueryAlias.Resolve("Large"));
     Html.RequiresJs(JsFileAlias.Resolve("Navigation"));
 }
 @section Metadata {
