@@ -3,9 +3,7 @@
 @using Escc.ClientDependencyFramework
 @{
     Model.Metadata.Title = "{pagetitle}";
-    Model.Metadata.DateCreated = "2015-01-15";
-    Model.Metadata.IpsvPreferredTerms = "Government, politics and public administration;Local government;County councillors;Political parties";
-    Model.Metadata.Creator = "Member Services Manager, East Sussex County Council";
+    Model.Metadata.DateCreated = new DateTimeOffset(new DateTime(2015, 1, 15));
     Html.RequiresCss(CssFileAlias.Resolve("MobileControls"));
     Html.RequiresCss(CssFileAlias.Resolve("NavigationSmall"));
     Html.RequiresCss(CssFileAlias.Resolve("NavigationMedium"), MediaQueryAlias.Resolve("Medium"));
